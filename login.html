@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJobs - Iniciar sesión</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <svg class="logo-icon" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                        <h2 class="logo-text">DevJobs</h2>
+                    </div>
+                    
+                    <nav class="navigation">
+                        <a href="#" class="nav-link">Buscar</a>
+                        <a href="#" class="nav-link">Empresas</a>
+                        <a href="#" class="nav-link">Acerca de</a>
+                    </nav>
+                    
+                    <div class="header-buttons">
+                        <a href="#" class="btn-primary">Publicar un empleo</a>
+                        <a href="#" class="btn-secondary">Iniciar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="login-container">
+                <div class="login-content">
+                    <div class="login-header">
+                        <h1 class="login-title">Bienvenido de vuelta</h1>
+                        <p class="login-subtitle">Inicia sesión para encontrar tu próxima oportunidad.</p>
+                    </div>
+                    
+                    <div class="login-card">
+                        <form class="login-form" method="POST" action="#">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon">
+                                        <svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.19V181.81Z"></path>
+                                        </svg>
+                                    </span>
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        class="form-input" 
+                                        placeholder="correo@ejemplo.com"
+                                        required
+                                        autocomplete="email"
+                                    >
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon">
+                                        <svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M208,80H176V56a48,48,0,0,0-96,0V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80Zm-80,84a12,12,0,1,1,12-12A12,12,0,0,1,128,164Zm32-84H96V56a32,32,0,0,1,64,0Z"></path>
+                                        </svg>
+                                    </span>
+                                    <input 
+                                        type="password" 
+                                        id="password" 
+                                        name="password" 
+                                        class="form-input" 
+                                        placeholder="••••••••"
+                                        required
+                                        autocomplete="current-password"
+                                    >
+                                </div>
+                            </div>
+                            
+                            <div class="form-options">
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="remember" name="remember">
+                                    <label for="remember">Recordarme</label>
+                                </div>
+                                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                            </div>
+                            
+                            <button type="submit" class="login-button">Iniciar sesión</button>
+                        </form>
+                        
+                        <div class="login-divider">
+                            <span>¿No tienes una cuenta?</span>
+                        </div>
+                        
+                        <div class="signup-buttons">
+                            <a href="#" class="signup-btn">Regístrate como desarrollador</a>
+                            <a href="#" class="signup-btn">Regístrate como empresa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <small class="footer-text">© 2025 DevJobs. Todos los derechos reservados.</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
